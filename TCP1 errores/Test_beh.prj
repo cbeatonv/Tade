@@ -1,0 +1,4 @@
+vhdl work "States.vhd"
+vhdl work "divfreq.vhd"
+vhdl work "TopModule.vhd"
+vhdl work "Test.vhd"

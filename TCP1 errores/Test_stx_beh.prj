@@ -1,0 +1,4 @@
+vhdl isim_temp "States.vhd"
+vhdl isim_temp "divfreq.vhd"
+vhdl isim_temp "TopModule.vhd"
+vhdl isim_temp "Test.vhd"

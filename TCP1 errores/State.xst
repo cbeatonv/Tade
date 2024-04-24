@@ -1,0 +1,5 @@
+set -tmpdir "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/xst/projnav.tmp"
+set -xsthdpdir "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/xst"
+elaborate
+-ifn State.prj
+-ifmt mixed

@@ -1,0 +1,22 @@
+V3 11
+FL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/divfreq.vhd" 2022/11/02.19:54:20 M.81d
+EN work/Divisor_reloj 1667417252 \
+      FL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/divfreq.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/Divisor_reloj/divisor 1667417253 \
+      FL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/divfreq.vhd" \
+      EN work/Divisor_reloj 1667417252
+FL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/States.vhd" 2022/11/02.20:26:31 M.81d
+EN work/State 1667417254 \
+      FL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/States.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/State/Behavioral 1667417255 \
+      FL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/States.vhd" \
+      EN work/State 1667417254
+FL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/TopModule.vhd" 2022/11/02.20:26:03 M.81d
+EN work/TopModule 1667417256 \
+      FL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/TopModule.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/TopModule/Behavioral 1667417257 \
+      FL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/TopModule.vhd" \
+      EN work/TopModule 1667417256 CP Divisor_reloj CP State

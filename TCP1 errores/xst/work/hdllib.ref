@@ -1,0 +1,6 @@
+AR state behavioral "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/States.vhd" sub00/vhpl01 1667417255
+EN divisor_reloj NULL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/divfreq.vhd" sub00/vhpl02 1667417252
+EN state NULL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/States.vhd" sub00/vhpl00 1667417254
+AR topmodule behavioral "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/TopModule.vhd" sub00/vhpl05 1667417257
+EN topmodule NULL "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/TopModule.vhd" sub00/vhpl04 1667417256
+AR divisor_reloj divisor "C:/Documents and Settings/lester/Escritorio/TCP1CamilaBeatonVerdeciaA32/divfreq.vhd" sub00/vhpl03 1667417253
