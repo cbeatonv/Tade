@@ -1,0 +1,22 @@
+V3 11
+FL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Contador.vhd" 2022/11/01.14:17:19 M.81d
+EN work/counter 1667319191 \
+      FL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Contador.vhd" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/std_logic_arith 1290154109
+AR work/counter/cuenta 1667319192 \
+      FL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Contador.vhd" \
+      EN work/counter 1667319191
+FL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/divfreq.vhd" 2022/11/01.14:21:01 M.81d
+EN work/Divisor_reloj 1667319189 \
+      FL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/divfreq.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/Divisor_reloj/divisor 1667319190 \
+      FL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/divfreq.vhd" \
+      EN work/Divisor_reloj 1667319189
+FL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.vhd" 2022/11/01.14:20:29 M.81d
+EN work/Topmodule 1667319193 \
+      FL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/Topmodule/Behavioral 1667319194 \
+      FL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.vhd" \
+      EN work/Topmodule 1667319193 CP Divisor_reloj CP counter

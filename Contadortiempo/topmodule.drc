@@ -1,0 +1,8 @@
+Release 12.4 Drc M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Tue Nov 01 14:23:40 2022
+
+drc -z Topmodule.ncd Topmodule.pcf
+
+DRC detected 0 errors and 0 warnings.

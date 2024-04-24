@@ -1,0 +1,4 @@
+vhdl isim_temp "divfreq.vhd"
+vhdl isim_temp "Contador.vhd"
+vhdl isim_temp "Topmodule.vhd"
+vhdl isim_temp "test.vhd"

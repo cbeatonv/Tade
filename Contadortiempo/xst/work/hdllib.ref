@@ -1,0 +1,6 @@
+EN divisor_reloj NULL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/divfreq.vhd" sub00/vhpl00 1667319189
+EN counter NULL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Contador.vhd" sub00/vhpl02 1667319191
+AR counter cuenta "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Contador.vhd" sub00/vhpl03 1667319192
+AR topmodule behavioral "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.vhd" sub00/vhpl05 1667319194
+EN topmodule NULL "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.vhd" sub00/vhpl04 1667319193
+AR divisor_reloj divisor "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/divfreq.vhd" sub00/vhpl01 1667319190

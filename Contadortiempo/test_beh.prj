@@ -1,0 +1,4 @@
+vhdl work "divfreq.vhd"
+vhdl work "Contador.vhd"
+vhdl work "Topmodule.vhd"
+vhdl work "test.vhd"

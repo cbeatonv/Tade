@@ -1,0 +1,453 @@
+Release 12.4 - xst M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> Reading design: Topmodule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Topmodule.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Topmodule"
+Output Format                      : NGC
+Target Device                      : xc3s1600e-4-fg320
+
+---- Source Options
+Top Module Name                    : Topmodule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/divfreq.vhd" in Library work.
+Architecture divisor of Entity divisor_reloj is up to date.
+Compiling vhdl file "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Contador.vhd" in Library work.
+Architecture cuenta of Entity counter is up to date.
+Compiling vhdl file "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.vhd" in Library work.
+Architecture behavioral of Entity topmodule is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Topmodule> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Divisor_reloj> in library <work> (architecture <divisor>) with generics.
+	n = 50000000
+
+Analyzing hierarchy for entity <counter> in library <work> (architecture <cuenta>) with generics.
+	data_size = 3
+	n = 9
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Topmodule> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.vhd" line 41: Unconnected output port 'clk_salida' of component 'Divisor_reloj'.
+Entity <Topmodule> analyzed. Unit <Topmodule> generated.
+
+Analyzing generic Entity <Divisor_reloj> in library <work> (Architecture <divisor>).
+	n = 50000000
+Entity <Divisor_reloj> analyzed. Unit <Divisor_reloj> generated.
+
+Analyzing generic Entity <counter> in library <work> (Architecture <cuenta>).
+	data_size = 3
+	n = 9
+Entity <counter> analyzed. Unit <counter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Divisor_reloj>.
+    Related source file is "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/divfreq.vhd".
+    Found 1-bit register for signal <rco>.
+    Found 1-bit register for signal <clk_state>.
+    Found 26-bit comparator less for signal <clk_state$cmp_lt0000> created at line 28.
+    Found 26-bit up counter for signal <contador>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Divisor_reloj> synthesized.
+
+
+Synthesizing Unit <counter>.
+    Related source file is "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Contador.vhd".
+    Found 1-bit register for signal <rco>.
+    Found 4-bit up counter for signal <contador>.
+    Found 4-bit comparator less for signal <contador$cmp_lt0000> created at line 32.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <counter> synthesized.
+
+
+Synthesizing Unit <Topmodule>.
+    Related source file is "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.vhd".
+Unit <Topmodule> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 4
+ 1-bit register                                        : 4
+# Comparators                                          : 3
+ 26-bit comparator less                                : 1
+ 4-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 26-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Comparators                                          : 3
+ 26-bit comparator less                                : 1
+ 4-bit comparator less                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Topmodule> ...
+
+Optimizing unit <Divisor_reloj> ...
+WARNING:Xst:2677 - Node <clkdiv/clk_state> of sequential type is unconnected in block <Topmodule>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Topmodule, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Topmodule.ngr
+Top Level Output File Name         : Topmodule
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 116
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 3
+#      LUT3                        : 29
+#      LUT4                        : 12
+#      MUXCY                       : 37
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 37
+#      FDC                         : 2
+#      FDCE                        : 35
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 2
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1600efg320-4 
+
+ Number of Slices:                       27  out of  14752     0%  
+ Number of Slice Flip Flops:             37  out of  29504     0%  
+ Number of 4 input LUTs:                 49  out of  29504     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    250     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 37    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 37    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.294ns (Maximum Frequency: 120.570MHz)
+   Minimum input arrival time before clock: 3.034ns
+   Maximum output required time after clock: 4.532ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.294ns (frequency: 120.570MHz)
+  Total number of paths / destination ports: 10227 / 45
+-------------------------------------------------------------------------
+Delay:               8.294ns (Levels of Logic = 40)
+  Source:            clkdiv/contador_0 (FF)
+  Destination:       clkdiv/contador_25 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clkdiv/contador_0 to clkdiv/contador_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.591   0.622  clkdiv/contador_0 (clkdiv/contador_0)
+     LUT4:I0->O            1   0.704   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_lut<0> (clkdiv/Mcompar_clk_state_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<0> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<1> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<2> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<3> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<4> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<5> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<6> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<7> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<8> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<9> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<10> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<10>)
+     MUXCY:CI->O          28   0.331   1.296  clkdiv/Mcompar_clk_state_cmp_lt0000_cy<11> (clkdiv/Mcompar_clk_state_cmp_lt0000_cy<11>)
+     LUT3:I2->O            1   0.704   0.000  clkdiv/Mcount_contador_lut<0> (clkdiv/Mcount_contador_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  clkdiv/Mcount_contador_cy<0> (clkdiv/Mcount_contador_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<1> (clkdiv/Mcount_contador_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<2> (clkdiv/Mcount_contador_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<3> (clkdiv/Mcount_contador_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<4> (clkdiv/Mcount_contador_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<5> (clkdiv/Mcount_contador_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<6> (clkdiv/Mcount_contador_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<7> (clkdiv/Mcount_contador_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<8> (clkdiv/Mcount_contador_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<9> (clkdiv/Mcount_contador_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<10> (clkdiv/Mcount_contador_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<11> (clkdiv/Mcount_contador_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<12> (clkdiv/Mcount_contador_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<13> (clkdiv/Mcount_contador_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<14> (clkdiv/Mcount_contador_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<15> (clkdiv/Mcount_contador_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<16> (clkdiv/Mcount_contador_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<17> (clkdiv/Mcount_contador_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<18> (clkdiv/Mcount_contador_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<19> (clkdiv/Mcount_contador_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<20> (clkdiv/Mcount_contador_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<21> (clkdiv/Mcount_contador_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<22> (clkdiv/Mcount_contador_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  clkdiv/Mcount_contador_cy<23> (clkdiv/Mcount_contador_cy<23>)
+     MUXCY:CI->O           0   0.059   0.000  clkdiv/Mcount_contador_cy<24> (clkdiv/Mcount_contador_cy<24>)
+     XORCY:CI->O           1   0.804   0.000  clkdiv/Mcount_contador_xor<25> (clkdiv/Mcount_contador25)
+     FDCE:D                    0.308          clkdiv/contador_25
+    ----------------------------------------
+    Total                      8.294ns (6.376ns logic, 1.918ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 27 / 27
+-------------------------------------------------------------------------
+Offset:              3.034ns (Levels of Logic = 1)
+  Source:            en (PAD)
+  Destination:       clkdiv/contador_25 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en to clkdiv/contador_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.218   1.261  en_IBUF (en_IBUF)
+     FDCE:CE                   0.555          clkdiv/rco
+    ----------------------------------------
+    Total                      3.034ns (1.773ns logic, 1.261ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.532ns (Levels of Logic = 1)
+  Source:            contador_s_d/contador_3 (FF)
+  Destination:       data_d<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: contador_s_d/contador_3 to data_d<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.591   0.669  contador_s_d/contador_3 (contador_s_d/contador_3)
+     OBUF:I->O                 3.272          data_d_3_OBUF (data_d<3>)
+    ----------------------------------------
+    Total                      4.532ns (3.863ns logic, 0.669ns route)
+                                       (85.2% logic, 14.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.29 secs
+ 
+--> 
+
+Total memory usage is 135884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

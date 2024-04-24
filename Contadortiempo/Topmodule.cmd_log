@@ -1,0 +1,27 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.xst" -ofn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Temp.ucf -p xc3s1600e-fg320-4 "Topmodule.ngc" Topmodule.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Topmodule_map.ncd Topmodule.ngd Topmodule.pcf 
+par -w -intstyle ise -ol high -t 1 Topmodule_map.ncd Topmodule.ncd Topmodule.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Topmodule.twx Topmodule.ncd -o Topmodule.twr Topmodule.pcf -ucf Temp.ucf 
+bitgen -intstyle ise -f Topmodule.ut Topmodule.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.xst" -ofn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Temp.ucf -p xc3s1600e-fg320-4 "Topmodule.ngc" Topmodule.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Topmodule_map.ncd Topmodule.ngd Topmodule.pcf 
+par -w -intstyle ise -ol high -t 1 Topmodule_map.ncd Topmodule.ncd Topmodule.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Topmodule.twx Topmodule.ncd -o Topmodule.twr Topmodule.pcf -ucf Temp.ucf 
+bitgen -intstyle ise -f Topmodule.ut Topmodule.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.xst" -ofn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.xst" -ofn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.xst" -ofn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.xst" -ofn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Temp.ucf -p xc3s1600e-fg320-4 "Topmodule.ngc" Topmodule.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Topmodule_map.ncd Topmodule.ngd Topmodule.pcf 
+par -w -intstyle ise -ol high -t 1 Topmodule_map.ncd Topmodule.ncd Topmodule.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Topmodule.twx Topmodule.ncd -o Topmodule.twr Topmodule.pcf -ucf Temp.ucf 
+bitgen -intstyle ise -f Topmodule.ut Topmodule.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.xst" -ofn "C:/Documents and Settings/lester/Escritorio/CLases/Contadortiempo/Topmodule.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Temp.ucf -p xc3s1600e-fg320-4 "Topmodule.ngc" Topmodule.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Topmodule_map.ncd Topmodule.ngd Topmodule.pcf 
+par -w -intstyle ise -ol high -t 1 Topmodule_map.ncd Topmodule.ncd Topmodule.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Topmodule.twx Topmodule.ncd -o Topmodule.twr Topmodule.pcf -ucf Temp.ucf 
+bitgen -intstyle ise -f Topmodule.ut Topmodule.ncd 
