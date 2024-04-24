@@ -1,0 +1,135 @@
+--------------------------------------------------------------------------------
+-- Company: 
+-- Engineer:
+--
+-- Create Date:   20:08:35 11/09/2022
+-- Design Name:   
+-- Module Name:   C:/Documents and Settings/lester/Escritorio/CLases/RAM/test.vhd
+-- Project Name:  RAM
+-- Target Device:  
+-- Tool versions:  
+-- Description:   
+-- 
+-- VHDL Test Bench Created by ISE for module: TopRam
+-- 
+-- Dependencies:
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+--
+-- Notes: 
+-- This testbench has been automatically generated using types std_logic and
+-- std_logic_vector for the ports of the unit under test.  Xilinx recommends
+-- that these types always be used for the top-level I/O of a design in order
+-- to guarantee that the testbench will bind correctly to the post-implementation 
+-- simulation model.
+--------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+ 
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--USE ieee.numeric_std.ALL;
+ 
+ENTITY test IS
+END test;
+ 
+ARCHITECTURE behavior OF test IS 
+ 
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+    COMPONENT TopRam
+    PORT(
+         clk : IN  std_logic;
+         rst : IN  std_logic;
+         lap_btn : IN  std_logic;
+         en_ram : IN  std_logic;
+         en : IN  std_logic;
+         stp : IN  std_logic;
+         en_out_2 : OUT  std_logic;
+         stp_out_2 : OUT  std_logic;
+         datai : IN  std_logic_vector(31 downto 0);
+         addr : IN  std_logic_vector(7 downto 0);
+         datao : OUT  std_logic_vector(31 downto 0)
+        );
+    END COMPONENT;
+    
+
+   --Inputs
+   signal clk : std_logic := '0';
+   signal rst : std_logic := '0';
+   signal lap_btn : std_logic := '0';
+   signal en_ram : std_logic := '0';
+   signal en : std_logic := '0';
+   signal stp : std_logic := '0';
+   signal datai : std_logic_vector(31 downto 0) := (others => '0');
+   signal addr : std_logic_vector(7 downto 0) := (others => '0');
+
+ 	--Outputs
+   signal en_out_2 : std_logic;
+   signal stp_out_2 : std_logic;
+   signal datao : std_logic_vector(31 downto 0);
+
+   -- Clock period definitions
+   constant clk_period : time := 10 ns;
+ 
+BEGIN
+ 
+	-- Instantiate the Unit Under Test (UUT)
+   uut: TopRam PORT MAP (
+          clk => clk,
+          rst => rst,
+          lap_btn => lap_btn,
+          en_ram => en_ram,
+          en => en,
+          stp => stp,
+          en_out_2 => en_out_2,
+          stp_out_2 => stp_out_2,
+          datai => datai,
+          addr => addr,
+          datao => datao
+        );
+
+   -- Clock process definitions
+   clk_process :process
+   begin
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
+   end process;
+ 
+
+   -- Stimulus process
+   stim_proc: process
+   begin		
+      -- hold reset state for 100 ns.
+      wait for 100 ns;	
+		lap_btn <= '1';
+		en_ram <= '1';
+		en <= '1';
+		stp <= '0';
+		datai <= "00000111000000011100000001110011";
+		addr <= "00000111";
+		wait for 100 ns;		
+		lap_btn <= '1';
+		en_ram <= '1';
+		en <= '0';
+		stp <= '1';
+		addr <= (others => '0');
+		datai <= "00000111000000011100000001110011";
+		wait for 100 ns;		
+		lap_btn <= '1';
+		en_ram <= '1';
+		en <= '0';
+		stp <= '1';
+		addr <= "00000111";
+      wait for clk_period*10;
+
+      -- insert stimulus here 
+
+      wait;
+   end process;
+
+END;

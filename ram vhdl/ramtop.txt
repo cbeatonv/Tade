@@ -1,0 +1,92 @@
+library IEEE;
+	use IEEE.STD_LOGIC_1164.ALL;
+	use ieee.numeric_std.ALL;
+
+entity TopRam is
+	generic (
+		ADDRESS_WIDTH	: integer := 8;
+		DATA_WIDTH	: integer := 32
+		);
+	port(
+		clk : in std_logic;
+		rst : in std_logic;
+		lap_btn : in std_logic;
+		en_ram : in std_logic;
+		en : in std_logic;
+		stp : in std_logic;
+		en_out_2 : out std_logic;
+		stp_out_2 : out std_logic;
+		datai : in std_logic_vector (DATA_WIDTH - 1 downto 0); --entrada de datos
+		addr : in std_logic_vector (ADDRESS_WIDTH - 1 downto 0); --entrada de direccion
+		datao : out std_logic_vector (DATA_WIDTH - 1 downto 0) --salida de datos
+	);
+	
+end TopRam;
+
+architecture Behavioral of TopRam is
+
+component RAM_STATE is
+	port(
+		clk : in std_logic;
+		rst : in std_logic;
+		lap_btn : in std_logic;
+		en : in std_logic;
+		stp : in std_logic;
+		en_out : out std_logic;
+		stp_out : out std_logic
+	);
+end component;
+
+component ram IS
+	generic (
+		ADDRESS_WIDTH	: integer := 8;
+		DATA_WIDTH	: integer := 32
+		);
+	port(
+		clk : in std_logic; --se;al de reloj
+		rst : in std_logic; --se;al de reset
+		en : in std_logic; --se;al de enable de la memoria
+		wr : in std_logic; --se;al de enable de escritura
+		rd : in std_logic; --se;al de enable de lectura
+		Din : in std_logic_vector (DATA_WIDTH - 1 downto 0); --entrada de datos
+		addr : in std_logic_vector (ADDRESS_WIDTH - 1 downto 0); --entrada de direccion
+		dout : out std_logic_vector (DATA_WIDTH - 1 downto 0) --salida de datos
+		);
+end component;
+
+signal en_out_1, stp_out_1 : std_logic;
+
+begin
+
+ramstate1: RAM_STATE 
+	port map(
+		clk => clk,
+		rst => rst,
+		lap_btn => lap_btn,
+		en => en,
+		stp => stp,
+		en_out => en_out_1,
+		stp_out => stp_out_1
+	);
+
+			
+ram1: ram
+	generic map(
+		ADDRESS_WIDTH => 8,
+		DATA_WIDTH => 32
+	)
+	port map(
+	clk => clk,
+	rst => rst,
+	en => en_ram,
+	wr => en_out_1,
+	rd => stp_out_1,
+	Din => datai,
+	addr => addr,
+	dout => datao
+	);
+	
+	en_out_2 <= en_out_1;
+	stp_out_2 <= stp_out_1;
+
+end Behavioral;
