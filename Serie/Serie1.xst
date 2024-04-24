@@ -1,0 +1,5 @@
+set -tmpdir "C:/Documents and Settings/lester/Escritorio/Serie/xst/projnav.tmp"
+set -xsthdpdir "C:/Documents and Settings/lester/Escritorio/Serie/xst"
+elaborate
+-ifn Serie1.prj
+-ifmt mixed
