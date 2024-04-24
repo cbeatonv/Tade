@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map M.81d on Thu Oct 27 04:10:43 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "en" LOCATE = SITE "V4" LEVEL 1;
+COMP "data<0>" LOCATE = SITE "C3" LEVEL 1;
+COMP "data<1>" LOCATE = SITE "D6" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "data<2>" LOCATE = SITE "E6" LEVEL 1;
+COMP "data<3>" LOCATE = SITE "D13" LEVEL 1;
+COMP "data<4>" LOCATE = SITE "A7" LEVEL 1;
+COMP "data<5>" LOCATE = SITE "G9" LEVEL 1;
+COMP "rst" LOCATE = SITE "K17" LEVEL 1;
+COMP "rco" LOCATE = SITE "A8" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+SCHEMATIC END;
+

@@ -1,0 +1,8 @@
+V3 3
+FL "C:/Documents and Settings/lester/Escritorio/Contadorprueba/prueba.vhd" 2022/10/27.04:06:22 M.81d
+EN work/counter 1666836517 \
+      FL "C:/Documents and Settings/lester/Escritorio/Contadorprueba/prueba.vhd" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/std_logic_arith 1290154109
+AR work/counter/cuenta 1666836518 \
+      FL "C:/Documents and Settings/lester/Escritorio/Contadorprueba/prueba.vhd" \
+      EN work/counter 1666836517
