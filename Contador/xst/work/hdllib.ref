@@ -1,0 +1,6 @@
+EN top NULL "C:/Documents and Settings/lester/Escritorio/Contador/top.vhd" sub00/vhpl02 1666838167
+EN divisor_reloj NULL "C:/Documents and Settings/lester/Escritorio/Contador/Signal_circuit.vhd" sub00/vhpl04 1666838163
+EN counter NULL "C:/Documents and Settings/lester/Escritorio/Contador/counter.vhd" sub00/vhpl00 1666838165
+AR top behavioral "C:/Documents and Settings/lester/Escritorio/Contador/top.vhd" sub00/vhpl03 1666838168
+AR counter cuenta "C:/Documents and Settings/lester/Escritorio/Contador/counter.vhd" sub00/vhpl01 1666838166
+AR divisor_reloj divisor "C:/Documents and Settings/lester/Escritorio/Contador/Signal_circuit.vhd" sub00/vhpl05 1666838164

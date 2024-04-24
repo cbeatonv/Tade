@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/Contador/Divisor_reloj.xst" -ofn "C:/Documents and Settings/lester/Escritorio/Contador/Divisor_reloj.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/Contador/Divisor_reloj.xst" -ofn "C:/Documents and Settings/lester/Escritorio/Contador/Divisor_reloj.syr" 

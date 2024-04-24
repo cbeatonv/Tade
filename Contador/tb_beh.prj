@@ -1,0 +1,4 @@
+vhdl work "Signal_circuit.vhd"
+vhdl work "counter.vhd"
+vhdl work "top.vhd"
+vhdl work "tb.vhd"

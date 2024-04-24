@@ -1,0 +1,22 @@
+V3 11
+FL "C:/Documents and Settings/lester/Escritorio/Contador/counter.vhd" 2022/10/27.04:15:55 M.81d
+EN work/counter 1666838165 \
+      FL "C:/Documents and Settings/lester/Escritorio/Contador/counter.vhd" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/std_logic_arith 1290154109
+AR work/counter/cuenta 1666838166 \
+      FL "C:/Documents and Settings/lester/Escritorio/Contador/counter.vhd" \
+      EN work/counter 1666838165
+FL "C:/Documents and Settings/lester/Escritorio/Contador/Signal_circuit.vhd" 2022/10/27.04:35:31 M.81d
+EN work/Divisor_reloj 1666838163 \
+      FL "C:/Documents and Settings/lester/Escritorio/Contador/Signal_circuit.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/Divisor_reloj/divisor 1666838164 \
+      FL "C:/Documents and Settings/lester/Escritorio/Contador/Signal_circuit.vhd" \
+      EN work/Divisor_reloj 1666838163
+FL "C:/Documents and Settings/lester/Escritorio/Contador/top.vhd" 2022/10/27.04:35:31 M.81d
+EN work/top 1666838167 \
+      FL "C:/Documents and Settings/lester/Escritorio/Contador/top.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/top/Behavioral 1666838168 \
+      FL "C:/Documents and Settings/lester/Escritorio/Contador/top.vhd" \
+      EN work/top 1666838167 CP Divisor_reloj CP counter

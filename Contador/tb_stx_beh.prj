@@ -1,0 +1,4 @@
+vhdl isim_temp "Signal_circuit.vhd"
+vhdl isim_temp "counter.vhd"
+vhdl isim_temp "top.vhd"
+vhdl isim_temp "tb.vhd"
