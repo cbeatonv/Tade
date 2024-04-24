@@ -1,0 +1,7 @@
+V3 3
+FL "C:/Documents and Settings/FlipFlop/Flip_Flop.vhd" 2022/10/12.04:00:39 M.81d
+EN work/Flip_Flop 1665540098 \
+      FL "C:/Documents and Settings/FlipFlop/Flip_Flop.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/Flip_Flop/Behavioral 1665540099 \
+      FL "C:/Documents and Settings/FlipFlop/Flip_Flop.vhd" EN work/Flip_Flop 1665540098

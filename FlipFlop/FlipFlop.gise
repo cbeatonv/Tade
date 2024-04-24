@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="FlipFlop.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Flip_Flop.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Flip_Flop.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Flip_Flop.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Flip_Flop.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Flip_Flop.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Flip_Flop.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Flip_Flop.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Flip_Flop.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Flip_Flop.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Flip_Flop.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Flip_Flop.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Flip_Flop.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Flip_Flop.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Flip_Flop.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Flip_Flop.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Flip_Flop.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Flip_Flop.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Flip_Flop.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Flip_Flop.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Flip_Flop_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Flip_Flop_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Flip_Flop_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Flip_Flop_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Flip_Flop_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Flip_Flop_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Flip_Flop_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Flip_Flop_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Flip_Flop_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Flip_Flop_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Flip_Flop_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Flip_Flop_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Flip_Flop_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Flip_Flop_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Flip_Flop_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Flip_Flop_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/Flip_Flop_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/Flip_Flop_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1665539934" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1665539934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665539934" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5324017346431950592" xil_pn:start_ts="1665539934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665539934" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7902466928835637720" xil_pn:start_ts="1665539934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665539934" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1665539934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665539934" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="104244155882677758" xil_pn:start_ts="1665539934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665539934" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="6080340526466663008" xil_pn:start_ts="1665539934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665539934" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="470589854290551522" xil_pn:start_ts="1665539934">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665540044" xil_pn:in_ck="-6750244350002713077" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1605358203473922857" xil_pn:start_ts="1665540041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Flip_Flop.lso"/>
+      <outfile xil_pn:name="Flip_Flop.ngc"/>
+      <outfile xil_pn:name="Flip_Flop.ngr"/>
+      <outfile xil_pn:name="Flip_Flop.prj"/>
+      <outfile xil_pn:name="Flip_Flop.stx"/>
+      <outfile xil_pn:name="Flip_Flop.syr"/>
+      <outfile xil_pn:name="Flip_Flop.xst"/>
+      <outfile xil_pn:name="Flip_Flop_vhdl.prj"/>
+      <outfile xil_pn:name="Flip_Flop_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1665540102" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-2285948847828667277" xil_pn:start_ts="1665540102">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1665540108" xil_pn:in_ck="-6750244350002721823" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="997794086107955941" xil_pn:start_ts="1665540107">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Flip_Flop.bld"/>
+      <outfile xil_pn:name="Flip_Flop.ngd"/>
+      <outfile xil_pn:name="Flip_Flop_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1665540109" xil_pn:in_ck="-6750244350002721822" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6904161257216636093" xil_pn:start_ts="1665540108">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Flip_Flop.pcf"/>
+      <outfile xil_pn:name="Flip_Flop_map.map"/>
+      <outfile xil_pn:name="Flip_Flop_map.mrp"/>
+      <outfile xil_pn:name="Flip_Flop_map.ncd"/>
+      <outfile xil_pn:name="Flip_Flop_map.ngm"/>
+      <outfile xil_pn:name="Flip_Flop_map.xrpt"/>
+      <outfile xil_pn:name="Flip_Flop_summary.xml"/>
+      <outfile xil_pn:name="Flip_Flop_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1665540118" xil_pn:in_ck="3208893948204153851" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-1229177303592316936" xil_pn:start_ts="1665540109">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Flip_Flop.ncd"/>
+      <outfile xil_pn:name="Flip_Flop.pad"/>
+      <outfile xil_pn:name="Flip_Flop.par"/>
+      <outfile xil_pn:name="Flip_Flop.ptwx"/>
+      <outfile xil_pn:name="Flip_Flop.unroutes"/>
+      <outfile xil_pn:name="Flip_Flop.xpi"/>
+      <outfile xil_pn:name="Flip_Flop_pad.csv"/>
+      <outfile xil_pn:name="Flip_Flop_pad.txt"/>
+      <outfile xil_pn:name="Flip_Flop_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1665540118" xil_pn:in_ck="-6750244350002721954" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1665540117">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Flip_Flop.twr"/>
+      <outfile xil_pn:name="Flip_Flop.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1665540102" xil_pn:in_ck="-6750244350002721823" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="-7095153064284196078" xil_pn:start_ts="1665540102">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/synthesis/Flip_Flop_synthesis.nlf"/>
+      <outfile xil_pn:name="netgen/synthesis/Flip_Flop_synthesis.vhd"/>
+    </transform>
+  </transforms>
+
+</generated_project>

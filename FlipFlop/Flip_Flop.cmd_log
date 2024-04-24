@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/FlipFlop/Flip_Flop.xst" -ofn "C:/Documents and Settings/FlipFlop/Flip_Flop.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/FlipFlop/Flip_Flop.xst" -ofn "C:/Documents and Settings/FlipFlop/Flip_Flop.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/FlipFlop/Flip_Flop.xst" -ofn "C:/Documents and Settings/FlipFlop/Flip_Flop.syr" 
+netgen -intstyle ise -ar Structure -tm Flip_Flop -w -dir netgen/synthesis -ofmt vhdl -sim Flip_Flop.ngc Flip_Flop_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1600e-fg320-4 "Flip_Flop.ngc" Flip_Flop.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Flip_Flop_map.ncd Flip_Flop.ngd Flip_Flop.pcf 
+par -w -intstyle ise -ol high -t 1 Flip_Flop_map.ncd Flip_Flop.ncd Flip_Flop.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Flip_Flop.twx Flip_Flop.ncd -o Flip_Flop.twr Flip_Flop.pcf 

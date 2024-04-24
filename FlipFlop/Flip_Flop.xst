@@ -1,0 +1,5 @@
+set -tmpdir "C:/Documents and Settings/FlipFlop/xst/projnav.tmp"
+set -xsthdpdir "C:/Documents and Settings/FlipFlop/xst"
+elaborate
+-ifn Flip_Flop.prj
+-ifmt mixed
