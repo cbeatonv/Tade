@@ -1,0 +1,34 @@
+library IEEE;
+	use IEEE.STD_LOGIC_1164.ALL;
+	use IEEE.std_logic_arith.all;
+
+entity multiplexer is
+
+	generic( 
+		en: integer := 0
+	);
+
+	Port(
+		selector: in std_logic_vector(1 downto 0);
+		output: out std_logic_vector(3 downto 0)
+	);
+	
+end multiplexer;
+
+architecture Behavioral of multiplexer is
+
+	begin
+
+		process (selector)
+		begin
+			case selector is
+				when "00" => output <= CONV_STD_LOGIC_VECTOR(en +1 , 4);
+				when "01" => output <= CONV_STD_LOGIC_VECTOR(en +2 , 4);
+				when "10" => output <= CONV_STD_LOGIC_VECTOR(en +3 , 4);
+				when "11" => output <= CONV_STD_LOGIC_VECTOR(en +4 , 4);
+				when others => output <= CONV_STD_LOGIC_VECTOR(en +5 , 4);
+			end case;
+		end process;
+
+end Behavioral;
+

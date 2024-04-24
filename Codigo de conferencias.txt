@@ -1,0 +1,358 @@
+--Conferencia 1
+
+--Estructura basica
+
+library ieee;
+use ieee.std_logic_1164.all; --librerias
+
+entity circuit is -- Se definen todas las entradas y salidas del módulo diseñado y algunos parámetros genéricos.
+generic(
+);
+port(
+) ;
+end circuit ;
+
+
+architecture arch of circuit is -- Describe el comportamiento del circuito.
+begin
+end architecture;
+
+-- El tipo std_logic_vector, que permite crear buses de N bits:
+
+signal x : std_logic_vector (7 downto 0);
+signal y : std_logic_vector (0 to 7);
+
+--integer
+
+signal d: integer; --tipo muy útil para definir valores genéricos
+
+-- permiten de manera nativa las siguientes operaciones:
+-- a**b -- exponente (b).
+-- a*b -- multiplicación.
+-- a/b -- división.
+-- a+b -- suma.
+-- a-b -- resta.
+
+--para las anteriores usar la libreria arith.all
+
+use IEEE.std_logic_arith.all;
+
+--entidades 
+
+entity CajaNegra is
+port(
+	a,b : in std_logic; -- Entradas simples.
+	c : out std_logic; -- Salida simple.
+	d : inout std_logic; -- Terminal bidireccional.
+	e : buffer std_logic -- Salida retroalimentada.
+);
+end CajaNegra;
+
+-- todos los puertos de entidad deben ser obligatoriamente de tipo std_logic
+
+--senales
+
+architecture archSum of sum is
+
+signal X,Y,Z std_logic := ‘0’;
+
+Begin
+
+X <= A xor B;
+S <= X xor Cin;
+Y <= X and Cin;
+Z <= A and B;
+Cout <= Y or Z;
+
+end architecture archSum;
+
+--Conferencia 2
+
+--asignaciones concurrentes
+
+<signal_name> <= <value_expr_1> when <boolean_expr_1> else
+<value_expr_2> when <boolean_expr_2> else
+. . .
+<value_expr_n>;
+
+with <sel_name> select
+<signal_name> <= <value_expr_1> when <choice_1>,
+<value_expr_2> when <choice_2>,
+. . .
+<value_expr_n> when others;
+
+--asignacion condicional con prioridad
+
+r <= (a + b + c) when (m = n) else
+(a - b ) when (m > n) else
+(c + 1) ;
+
+--asignacion condicional sin prioridad
+
+with sel select
+r <= a+b+c when “00”,
+a-b when “10”,
+c+1 when others;
+
+--estructura del process
+
+<label>: process <sensitivity_list> is --Lista de sensibilidad (lista de señales que “disparan” el proceso cuando cambian de estado).
+begin
+<secuencial statement>;
+--Sentencias secuenciales (if, elsif, else, case) -- solo se escriben dentro del process
+. . .
+end process <label>;
+
+--No es posible incluir sentencias “when <> else <>” o “with <> select <>” en los bloques process.
+
+--if then
+
+if <condition> then
+<statement>
+elsif <condition> then
+<statement>
+else
+<statement>
+end if;
+
+-- descripcion de un flip flop
+
+library ieee ;
+use ieee.std_logic_1164.all;
+
+entity flip_flop is
+	port (
+		clk,d,rst: in std_logic;
+		q: out std_logic
+	);
+end flip_flop;
+
+architecture arch_FF of flip_flop is
+
+	signal sq: std_logic;
+
+	begin
+		process (clk, rst) is
+		begin
+			if(rst = '1') then
+				sq <= '0';
+			elsif(clk'event and clk = '1')then
+				sq <= d;
+			else
+				sq <= sq;
+			end if;
+		end process;
+	q <= sq;
+
+end architecture arch_FF;
+
+--se recomienda evitar las señales de reset y set asíncronas al usar sus dispositivos.
+
+process (<clock>) is
+begin
+	if <clock>'event and <clock>='1' then
+		if <reset> = '1' then
+			<output> <= '0';
+		else
+			<output> <= <input>;
+		end if;
+	end if;
+end process;
+
+-- sentencia case
+
+case (<2-bit select>) is
+	when "00" =>
+		<statement>;
+	when "01" =>
+		<statement>;
+	when "10" =>
+		<statement>;
+	when "11" =>
+		<statement>;
+	when others =>
+		<statement>;
+end case;
+
+--Muy útil para describir la lógica del próximo estado en las maquinas de estado
+
+--ejemplo case con logica de proximo estado
+
+NEXT_STATE_DECODE: process (state, <input1>, <input2>, ...)
+	begin
+		case (state) is
+			when st1_<name> =>
+				if <input_1> = '1' then
+					next_state <= st2_<name>;
+				end if;
+			when st2_<name> =>
+				if <input_2> = '1' then
+					next_state <= st3_<name>;
+				end if;
+			when st3_<name> =>
+				next_state <= st1_<name>;
+			when others =>
+				next_state <= st1_<name>;
+		end case;
+end process NEXT_STATE_DECODE;
+
+--ejemplo: Describa un componente en VHDL que genere un pulso negativo en una señal de salida (SDOUT) 
+cuando se detecte un frente de subida en una señal de entrada (SDIN).
+
+library ieee ;
+use ieee.std_logic_1164.all;
+entity risingEdgeDetector is
+port (
+clk,rst,sdin: in std_logic;
+sdout: out std_logic
+);
+end risingEdgeDetector;
+
+--terminar
+
+--Conferencia 3
+
+--parametros genericos
+
+entity genBinCount is
+	generic(
+		N: integer := 8
+	);
+	port (
+		clk, rst, enc: in std_logic;
+		dataIn: in std_logic_vector (N-1 downto 0);
+		dataOut: out std_logic_vector (N-1 downto 0)
+	) ;
+end genBinCount ;
+
+--sentencia generate
+
+<LABEL_1>: if <condition> generate
+	begin
+		<statement>;
+end generate;
+
+<LABEL_1>: for <name> in <lower_limit> to <upper_limit> generate
+	begin
+		<statement>;
+end generate;
+
+--ejemplo
+
+entity sumGen is
+
+	generic( n: integer := 8);
+	
+	port (cin : in std_logic;
+	a,b : in std_logic_vector(n downto 0) ;
+	sum : out std_logic_vector(n downto 0) ;
+	cout : out std_logic);
+	
+end sumGen;
+
+architecture arch of sumGen is
+
+	signal i_cin: std_logic_vector(n+1 downto 0) ;
+	
+	begin
+		i_cin(0) <= cin;
+		cout <= i_cin(n+1);
+		
+		sumGenerate : for i in 0 to n generate
+			sum(i) <= a(i) xor b(i) xor i_cin(i);
+			i_cin(i+1) <= (a(i) and b(i)) or (a(i) and i_cin(i))) or (b(i) and i_cin(i));
+		end generate ; -- sumGenerate
+	
+end architecture ;
+
+--reutilizacion de componentes ejemplo de modulo top
+
+entity TopModule is
+	port (
+		clk, rst: in std_logic;
+		Dout: out std_logic_vector (7 downto 0)
+	) ;
+end TopModule ;
+
+architecture arch of TopModule is
+
+	component genBinCounter
+	
+		generic(n: integer := 8);
+		
+		port (
+			clk, rst, enc: in std_logic;
+			dataIn: in std_logic_vector (N-1 downto 0);
+			dataOut: out std_logic_vector (N-1 downto 0)
+		);
+	
+	end component;
+
+	component genDiv
+	
+		generic(
+			MaxCount: integer := 50000000
+		);
+		
+		port (
+			clk, rst: in std_logic;
+			pulse: out std_logic
+		);
+	
+	end component;
+
+	signal pulse: std_logic;
+
+	begin
+	
+	Div0: genDiv
+	generic map(
+		MaxCount => 50000000
+	)
+	port map(
+		clk => clk, -- del lado izquierdo la senal del componente que se esta describiendo y del lado derecho a donde se esta conectando
+		rst => rst,
+		pulse => pulse
+	);
+	
+	Counter0: genBinCounter
+	generic map(
+		B => 8
+	)
+	port map(
+		clk => clk,
+		rst => rst,
+		enc => pulse, -- en este caso la senal de enable del contador se esta conectando al pulso del divisor de frecuencia
+		dataIn => "00000000",
+		dataOut=> data
+	);
+	
+end architecture arch;
+
+--para simulacion 
+
+-- Retrasos (after) --  A <= ‘1’,‘0’after 10ns,‘1’ after 100ns,‘0’after 10ns;
+-- Esperas (wait): Se utiliza en procesos.
+-- Wait until <condición>. Ej: wait until A = ‘1’;
+-- Wait for <tiempo>. Ej: wait for 100ns;
+-- Wait on <señal>. Ej: wait on A;
+-- Wait ; (suspende definitivamente la ejecución del process).
+
+--bucles
+
+loop
+	CLK <= not CLK;
+	wait for PERIOD/2;
+	if <signal_name> = <value> then
+		exit;
+	end if;
+end loop;
+
+while <condition> loop
+	<statement>;
+end loop;
+
+for <variable_name> in <lower_limit> to <upper_limit> loop
+	<statement>;
+end loop;
+
