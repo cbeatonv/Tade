@@ -1,0 +1,31 @@
+library IEEE;
+	use IEEE.STD_LOGIC_1164.ALL;
+
+entity Buffer_2kb is
+	generic (n: integer := 10);
+	port ( clk, rst, buffer_entrada : in std_logic;
+			buffer_salida : out std_logic
+			);
+end Buffer_2kb;
+
+architecture Behavioral of Buffer_2kb is
+
+signal D_bus, Q_bus : std_logic_vector(n-1 downto 0):= (others => '0');
+
+begin
+	--registro de estado
+	process (clk)
+	begin
+		if rst = '1' then
+			D_bus <= (others => '0');
+			Q_bus <= (others => '0');
+		elsif clk'event and clk = '1' then
+			Q_bus <= D_bus;
+		end if;
+	end process;	
+	--logica de estado siguiente 
+	D_bus <= buffer_entrada & Q_bus (n-1 downto 1);
+	--logica de salida
+	buffer_salida <= Q_bus(0);
+
+end Behavioral;
