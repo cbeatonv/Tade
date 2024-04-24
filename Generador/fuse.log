@@ -1,0 +1,31 @@
+Running: C:\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/test_isim_beh.exe -prj C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/test_beh.prj work.test 
+ISim M.81d (signature 0xcb73ee62)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/SPI.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Selector_frecuencia.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_signal.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Divisor_frecuencia_25MHz.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Contador_4_bits.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 72184 KB
+Fuse CPU Usage: 60 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Compiling architecture behavioral of entity gen [gen_default]
+Compiling architecture behavioral of entity spi [spi_default]
+Compiling architecture arch of entity clk_25mhz [clk_25mhz_default]
+Compiling architecture behavioral of entity contador [contador_default]
+Compiling architecture arch of entity frequ [frequ_default]
+Compiling architecture behavioral of entity generador_top [generador_top_default]
+Compiling architecture behavior of entity test
+Time Resolution for simulation is 1ps.
+Compiled 16 VHDL Units
+Built simulation executable C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/test_isim_beh.exe
+Fuse Memory Usage: 77820 KB
+Fuse CPU Usage: 80 ms

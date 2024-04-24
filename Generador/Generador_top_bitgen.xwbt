@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Documents and Settings\lester\Escritorio\TADE\CLases\Generador\Generador_top.ncd
+OUTFILE=C:\Documents and Settings\lester\Escritorio\TADE\CLases\Generador\Generador_top.bit
+FAMILY=Spartan3E
+PART=xc3s1600e-4fg320
+WORKINGDIR=C:\Documents and Settings\lester\Escritorio\TADE\CLases\Generador
+LICENSE=WebPack
+USER_INFO=0_0_0

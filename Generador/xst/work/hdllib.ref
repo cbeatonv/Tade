@@ -1,0 +1,12 @@
+AR clk_25mhz arch "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Divisor_frecuencia_25MHz.vhd" sub00/vhpl07 1699735854
+EN spi NULL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/SPI.vhd" sub00/vhpl04 1699735851
+EN generador_top NULL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.vhd" sub00/vhpl00 1699735859
+EN clk_25mhz NULL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Divisor_frecuencia_25MHz.vhd" sub00/vhpl06 1699735853
+EN gen NULL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_signal.vhd" sub00/vhpl02 1699735849
+AR generador_top behavioral "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.vhd" sub00/vhpl01 1699735860
+EN frequ NULL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Selector_frecuencia.vhd" sub00/vhpl10 1699735857
+AR frequ arch "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Selector_frecuencia.vhd" sub00/vhpl11 1699735858
+EN contador NULL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Contador_4_bits.vhd" sub00/vhpl08 1699735855
+AR contador behavioral "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Contador_4_bits.vhd" sub00/vhpl09 1699735856
+AR spi behavioral "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/SPI.vhd" sub00/vhpl05 1699735852
+AR gen behavioral "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_signal.vhd" sub00/vhpl03 1699735850

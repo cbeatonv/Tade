@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map M.81d on Sat Nov 11 22:14:29 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sw_sign<0>" LOCATE = SITE "H18" LEVEL 1;
+COMP "sw_sign<1>" LOCATE = SITE "N17" LEVEL 1;
+COMP "SPI_SCK" LOCATE = SITE "U16" LEVEL 1;
+COMP "DAC_CS" LOCATE = SITE "N8" LEVEL 1;
+COMP "led2" LOCATE = SITE "C3" LEVEL 1;
+COMP "sw_freq<0>" LOCATE = SITE "L13" LEVEL 1;
+COMP "sw_freq<1>" LOCATE = SITE "L14" LEVEL 1;
+COMP "SPI_MOSI" LOCATE = SITE "T4" LEVEL 1;
+COMP "DAC_CLR" LOCATE = SITE "P8" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "led" LOCATE = SITE "D4" LEVEL 1;
+COMP "rst" LOCATE = SITE "K17" LEVEL 1;
+PIN rst_pin<0> = BEL "rst" PINNAME PAD;
+PIN "rst_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

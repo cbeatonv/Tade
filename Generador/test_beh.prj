@@ -1,0 +1,7 @@
+vhdl work "SPI.vhd"
+vhdl work "Selector_frecuencia.vhd"
+vhdl work "Generador_signal.vhd"
+vhdl work "Divisor_frecuencia_25MHz.vhd"
+vhdl work "Contador_4_bits.vhd"
+vhdl work "Generador_top.vhd"
+vhdl work "test.vhd"

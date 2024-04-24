@@ -1,0 +1,6 @@
+work	"Contador_4_bits.vhd"
+work	"Divisor_frecuencia_25MHz.vhd"
+work	"Generador_signal.vhd"
+work	"Generador_top.vhd"
+work	"SPI.vhd"
+work	"Selector_frecuencia.vhd"

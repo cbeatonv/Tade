@@ -1,0 +1,6 @@
+vhdl work "C:\Documents and Settings\lester\Escritorio\TADE\CLases\Generador\SPI.vhd"
+vhdl work "C:\Documents and Settings\lester\Escritorio\TADE\CLases\Generador\Selector_frecuencia.vhd"
+vhdl work "C:\Documents and Settings\lester\Escritorio\TADE\CLases\Generador\Generador_signal.vhd"
+vhdl work "C:\Documents and Settings\lester\Escritorio\TADE\CLases\Generador\Divisor_frecuencia_25MHz.vhd"
+vhdl work "C:\Documents and Settings\lester\Escritorio\TADE\CLases\Generador\Contador_4_bits.vhd"
+vhdl work "C:\Documents and Settings\lester\Escritorio\TADE\CLases\Generador\Generador_top.vhd"

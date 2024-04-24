@@ -1,0 +1,44 @@
+V3 23
+FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Contador_4_bits.vhd" 2023/11/11.19:41:51 M.81d
+EN work/contador 1699735855 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Contador_4_bits.vhd" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/std_logic_arith 1290154109
+AR work/contador/Behavioral 1699735856 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Contador_4_bits.vhd" \
+      EN work/contador 1699735855
+FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Divisor_frecuencia_25MHz.vhd" 2023/11/11.17:53:00 M.81d
+EN work/clk_25MHz 1699735853 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Divisor_frecuencia_25MHz.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/clk_25MHz/arch 1699735854 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Divisor_frecuencia_25MHz.vhd" \
+      EN work/clk_25MHz 1699735853
+FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_signal.vhd" 2023/11/11.21:12:18 M.81d
+EN work/gen 1699735849 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_signal.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/gen/Behavioral 1699735850 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_signal.vhd" \
+      EN work/gen 1699735849
+FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.vhd" 2023/11/11.19:43:39 M.81d
+EN work/Generador_top 1699735859 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/Generador_top/Behavioral 1699735860 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.vhd" \
+      EN work/Generador_top 1699735859 CP gen CP SPI CP clk_25MHz CP contador \
+      CP frequ
+FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Selector_frecuencia.vhd" 2023/11/11.21:03:39 M.81d
+EN work/frequ 1699735857 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Selector_frecuencia.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/frequ/arch 1699735858 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Selector_frecuencia.vhd" \
+      EN work/frequ 1699735857
+FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/SPI.vhd" 2023/11/11.20:15:12 M.81d
+EN work/SPI 1699735851 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/SPI.vhd" \
+      PB ieee/std_logic_1164 1290154108
+AR work/SPI/Behavioral 1699735852 \
+      FL "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/SPI.vhd" \
+      EN work/SPI 1699735851

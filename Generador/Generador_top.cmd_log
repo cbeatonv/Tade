@@ -1,0 +1,40 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+netgen -intstyle ise -ar Structure -tm Generador_top -w -dir netgen/synthesis -ofmt vhdl -sim Generador_top.ngc Generador_top_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+netgen -intstyle ise -ar Structure -tm Generador_top -w -dir netgen/synthesis -ofmt vhdl -sim Generador_top.ngc Generador_top_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+netgen -intstyle ise -ar Structure -tm Generador_top -w -dir netgen/synthesis -ofmt vhdl -sim Generador_top.ngc Generador_top_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+netgen -intstyle ise -ar Structure -tm Generador_top -w -dir netgen/synthesis -ofmt vhdl -sim Generador_top.ngc Generador_top_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+netgen -intstyle ise -ar Structure -tm Generador_top -w -dir netgen/synthesis -ofmt vhdl -sim Generador_top.ngc Generador_top_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+netgen -intstyle ise -ar Structure -tm Generador_top -w -dir netgen/synthesis -ofmt vhdl -sim Generador_top.ngc Generador_top_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Generadorucf.ucf -p xc3s1600e-fg320-4 "Generador_top.ngc" Generador_top.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Generador_top_map.ncd Generador_top.ngd Generador_top.pcf 
+par -w -intstyle ise -ol high -t 1 Generador_top_map.ncd Generador_top.ncd Generador_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Generadorucf.ucf -p xc3s1600e-fg320-4 "Generador_top.ngc" Generador_top.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Generador_top_map.ncd Generador_top.ngd Generador_top.pcf 
+par -w -intstyle ise -ol high -t 1 Generador_top_map.ncd Generador_top.ncd Generador_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Generador_top.twx Generador_top.ncd -o Generador_top.twr Generador_top.pcf -ucf Generadorucf.ucf 
+bitgen -intstyle ise -f Generador_top.ut Generador_top.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Generadorucf.ucf -p xc3s1600e-fg320-4 "Generador_top.ngc" Generador_top.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Generador_top_map.ncd Generador_top.ngd Generador_top.pcf 
+par -w -intstyle ise -ol high -t 1 Generador_top_map.ncd Generador_top.ncd Generador_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Generador_top.twx Generador_top.ncd -o Generador_top.twr Generador_top.pcf -ucf Generadorucf.ucf 
+bitgen -intstyle ise -f Generador_top.ut Generador_top.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.xst" -ofn "C:/Documents and Settings/lester/Escritorio/TADE/CLases/Generador/Generador_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Generadorucf.ucf -p xc3s1600e-fg320-4 "Generador_top.ngc" Generador_top.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Generador_top_map.ncd Generador_top.ngd Generador_top.pcf 
+par -w -intstyle ise -ol high -t 1 Generador_top_map.ncd Generador_top.ncd Generador_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Generador_top.twx Generador_top.ncd -o Generador_top.twr Generador_top.pcf -ucf Generadorucf.ucf 
+bitgen -intstyle ise -f Generador_top.ut Generador_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Generadorucf.ucf -p xc3s1600e-fg320-4 "Generador_top.ngc" Generador_top.ngd  
+map -intstyle ise -p xc3s1600e-fg320-4 -cm area -ir off -pr off -c 100 -o Generador_top_map.ncd Generador_top.ngd Generador_top.pcf 
+par -w -intstyle ise -ol high -t 1 Generador_top_map.ncd Generador_top.ncd Generador_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Generador_top.twx Generador_top.ncd -o Generador_top.twr Generador_top.pcf -ucf Generadorucf.ucf 
+bitgen -intstyle ise -f Generador_top.ut Generador_top.ncd 

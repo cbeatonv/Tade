@@ -1,0 +1,13 @@
+NET "clk" LOC = "C9" ;
+NET "DAC_CLR" LOC = "P8" ;
+NET "DAC_CS" LOC = "N8" ;
+NET "led" LOC = "D4" ;
+NET "led2" LOC = "C3" ;
+NET "rst" LOC = "K17" | PULLDOWN ;
+NET "rst" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "SPI_MOSI" LOC = "T4" ;
+NET "SPI_SCK" LOC = "U16" ;
+NET "sw_freq[0]" LOC = "L13" ;
+NET "sw_freq[1]" LOC = "L14" ;
+NET "sw_sign[0]" LOC = "H18" ;
+NET "sw_sign[1]" LOC = "N17" ;
